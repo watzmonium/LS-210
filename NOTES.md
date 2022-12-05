@@ -108,3 +108,7 @@
         // bad
           function foo() { return false; }
     use !! for boolean conversion
+
+  # To remember:
+
+    number.toFixed(precision) => returns a string at that precision

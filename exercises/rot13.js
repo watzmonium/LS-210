@@ -20,11 +20,7 @@ function rot13(str) {
   return cipherText;
 }
 
-const foobar4 = "[\\]^_`";
-console.log(rot13(foobar4) === foobar4);
-
-const foobar5 = "{|}~";
-console.log(rot13(foobar5) === foobar5);
+console.log(rot13('Lily Gow is a cow who like to say meow!'))
 
 // console.log(rot13('Teachers open the door, but you must enter by yourself.'));
 
