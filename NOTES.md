@@ -109,6 +109,47 @@
           function foo() { return false; }
     use !! for boolean conversion
 
+  # Objects
+
+  - ES6 change from colon syntax
+
+    let myObj = {
+      # OLD
+      foo: function (who) {
+        console.log(`hello ${who}`);
+      },
+
+      # NEW
+      foo(who) {
+        console.log(`hello ${who}`);
+      },
+
+      bar(x, y) {
+        return x + y;
+      },
+    };
+
+  DONT USE ARROW FUNCTIONS FOR METHODS. there's some issue with it
+
+  you can use `delete obj.prop` to delete a property from an object.
+
+  # Deep copy of a nested array or basic object:
+
+    serializedArr = JSON.stringify(arr)
+    JSON.parse(serializedArr)
+
+    - this works if the object being copied only has
+      - primitives
+      - arrays
+      - plain objects
+
   # To remember:
 
     number.toFixed(precision) => returns a string at that precision
+    array.splice(startIdx, numberToOverwrite, valueToInsert)
+    array.slice(-2, -1)[0]
+    let copy = [...array] => creates a shallow copy
+    Object.assign(destination, source) => creates a shallow copy of an object
+
+
+  
