@@ -147,9 +147,11 @@
 
     number.toFixed(precision) => returns a string at that precision
     array.splice(startIdx, numberToOverwrite, valueToInsert)
-    array.slice(-2, -1)[0]
+    array.slice(-2, -1)[0]x
     let copy = [...array] => creates a shallow copy
     Object.assign(destination, source) => creates a shallow copy of an object
+    quantity = quantity || 1;
 
-
-  
+  # Studying
+    examples of a closure in JS
+    examples of hoisting
